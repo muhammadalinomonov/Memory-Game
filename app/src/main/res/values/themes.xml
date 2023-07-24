@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyMemoryGame" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor">#1E9823</item>
+    </style>
+
+    <style name="Theme.MyMemoryGame" parent="Base.Theme.MyMemoryGame" />
+    <style name="HorizontalProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminate">false</item>
+        <item name="android:progressDrawable">@drawable/progress_bar</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+</resources>

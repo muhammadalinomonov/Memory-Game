@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreen">
+
+    <fragment
+        tools:layout="@layout/screen_home"
+        android:id="@+id/homeScreen"
+        android:name="uz.gita.a5.mymemorygame.presentation.screen.homescreen.HomeScreen"
+        android:label="HomeScreen" >
+        <action
+            android:id="@+id/action_homeScreen_to_gameScreen"
+            app:destination="@id/gameScreen" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/screen_game"
+        android:id="@+id/gameScreen"
+        android:name="uz.gita.a5.mymemorygame.presentation.screen.gamescreen.GameScreen"
+        android:label="GameScreen" >
+        <argument
+            android:name="level"
+            app:argType="uz.gita.a5.mymemorygame.data.LevelEnum" />
+
+    </fragment>
+</navigation>
